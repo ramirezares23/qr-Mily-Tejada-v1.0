@@ -1,45 +1,34 @@
 const Team = () => {
-  const teamMembers = [
-    {
-      name: "Leonard Krasner",
-      position: "Senior Designer",
-      image: "/image1.jpg",
-    },
-    {
-      name: "Floyd Miles",
-      position: "Principal Designer",
-      image: "/image2.jpg",
-    },
-    {
-      name: "Emily Selman",
-      position: "VP, User Experience",
-      image: "/image3.jpg",
-    },
-  ];
+  const teamMember = {
+    name: "Mily Tejada",
+    position: "Fundadora & Directora Creativa",
+    image: "/FotoMily.jpg",
+    bio: `Mily Tejada es una creativa apasionada por la moda y el empoderamiento femenino. Con más de 15 años de experiencia en la industria, ha dedicado su carrera a diseñar prendas que realzan la belleza y la autenticidad de cada mujer. Bajo su liderazgo, la marca ha crecido, enfocándose en combinar elegancia, comodidad y versatilidad en cada colección. Su visión es que cada clienta se sienta segura y elegante en cualquier ocasión.`,
+  };
 
   return (
-    <section className="bg-gray-100 p-8">
-      <h2 className="text-2xl font-bold text-center mb-4">Conoce nuestro equipo</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {teamMembers.map((member, index) => (
-          <div className="team-member text-center" key={index}>
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-24 h-24 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-lg font-semibold">{member.name}</h3>
-            <p>{member.position}</p>
-            <div className="flex justify-center space-x-2 mt-2">
-              <a href="#" className="text-blue-600">
-                LinkedIn
-              </a>
-              <a href="#" className="text-gray-600">
-                Twitter
-              </a>
-            </div>
-          </div>
-        ))}
+    <section className="bg-[#d9d9d9] p-8 flex flex-col items-center md:flex-row md:items-start md:space-x-8">
+      <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+        <img
+          src={teamMember.image}
+          alt={teamMember.name}
+          className="w-full h-auto max-w-md rounded-lg shadow-md"
+        />
+      </div>
+      <div className="w-full md:w-1/2 mt-6 md:mt-0 text-center md:text-left">
+        <h2 className="text-2xl font-bold mb-2">{teamMember.name}</h2>
+        <p className="text-lg font-semibold text-gray-700 mb-4">
+          {teamMember.position}
+        </p>
+        <p className="text-gray-600 mb-4">{teamMember.bio}</p>
+        <div className="flex justify-center md:justify-start space-x-4 mt-4">
+          <a href="#" className="text-blue-600 hover:underline">
+            LinkedIn
+          </a>
+          <a href="#" className="text-gray-600 hover:underline">
+            Twitter
+          </a>
+        </div>
       </div>
     </section>
   );

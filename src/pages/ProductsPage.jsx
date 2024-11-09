@@ -61,8 +61,8 @@ const ProductsPage = () => {
   }, [search, products]);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <div className="p-4 bg-gray-100 flex-grow">
+    <div className="min-h-screen bg-[#d9d9d9] flex flex-col items-center">
+      <div className="p-4 w-full max-w-screen-lg flex-grow">
         <SearchBar
           search={search}
           setSearch={setSearch}

@@ -3,13 +3,13 @@ import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC1bx54Gp11aR6amEbzEHfyoM_nYP6TFD0",
-  authDomain: "qr-project-d4948.firebaseapp.com",
-  projectId: "qr-project-d4948",
-  storageBucket: "qr-project-d4948.appspot.com",
-  messagingSenderId: "895962410294",
-  appId: "1:895962410294:web:d94da616d93975fddc1797",
-  measurementId: "G-E530824EQV",
+  apiKey: "AIzaSyDFfoKyjgrb9rCtlV1luLdNVz271L7GPlQ",
+  authDomain: "mily-tejada.firebaseapp.com",
+  projectId: "mily-tejada",
+  storageBucket: "mily-tejada.appspot.com",
+  messagingSenderId: "803271143778",
+  appId: "1:803271143778:web:3a0dae3d947d64cf7bbc3b",
+  measurementId: "G-34EKWD6KKN"
 };
 
 export const app = initializeApp(firebaseConfig);

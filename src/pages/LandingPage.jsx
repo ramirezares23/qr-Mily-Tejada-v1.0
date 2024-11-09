@@ -5,7 +5,7 @@ import Header from "../components/Header";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="bg[#d9d9d9]">
       <Header />
       <div className="mt-4">
         <ImageCarousel />

@@ -50,48 +50,54 @@ const FilterModal = ({ show, onClose, onApply }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <div className="bg-white p-6 rounded-lg shadow-lg relative">
+      <div className="bg-[#f0f0f0] p-6 rounded-lg shadow-lg relative w-80">
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-gray-500 hover:text-black"
+          className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-2xl font-bold"
         >
           &times;
         </button>
-        <h2 className="text-lg font-bold mb-4">Filtros</h2>
-        {error && <p className="text-red-600 mb-4">{error}</p>}
+        <h2 className="text-xl font-semibold mb-4 text-gray-700 text-center">
+          Filtros
+        </h2>
+        {error && <p className="text-red-500 mb-4 text-sm">{error}</p>}
         <div className="mb-4">
-          <label className="block mb-2">Filtrar por tipo</label>
+          <label className="block mb-2 text-gray-600 font-medium">
+            Filtrar por tipo
+          </label>
           <select
             value={filterType}
             onChange={(e) => setFilterType(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded"
+            className="w-full p-2 bg-white border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#636363] text-gray-700"
           >
             <option value="">Seleccione un Producto</option>
-            <option value="Hamburguesa">Hamburguesa</option>
-            <option value="Pollo">Pollo</option>
-            <option value="Combo">Combo</option>
+            <option value="Camisa">Camisa</option>
+            <option value="Pantalón">Pantalón</option>
+            <option value="Blusa">Blusa</option>
           </select>
         </div>
         <div className="mb-4">
-          <label className="block mb-2">Rango de precio</label>
+          <label className="block mb-2 text-gray-600 font-medium">
+            Rango de precio
+          </label>
           <input
             type="text"
             placeholder="Precio mínimo"
             value={minPrice}
             onChange={handleMinPriceChange}
-            className="w-full mb-2 p-2 border border-gray-300 rounded"
+            className="w-full mb-2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#636363] text-gray-700"
           />
           <input
             type="text"
             placeholder="Precio máximo"
             value={maxPrice}
             onChange={handleMaxPriceChange}
-            className="w-full p-2 border border-gray-300 rounded"
+            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#636363] text-gray-700"
           />
         </div>
         <button
           onClick={handleApply}
-          className="w-full bg-red-600 text-white p-2 rounded"
+          className="w-full bg-[#636363] text-white p-2 rounded-full hover:bg-gray-700 transition-colors duration-300"
         >
           Aplicar Filtros
         </button>
