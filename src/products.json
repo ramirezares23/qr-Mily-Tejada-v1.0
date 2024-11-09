@@ -1,0 +1,17 @@
+[
+    {
+      "description": "20 nuggets + 2 papas regulares + 1 refresco de Lt + 2 ensaladas regulares + 2 salsas de su preferencia",
+      "image": "https://firebasestorage.googleapis.com/v0/b/qr-project-d4948.appspot.com/o/combo_grande.webp?alt=media&token=e9efae1e-be03-41dd-a0d0-7fe18cbcc7c2",
+      "name": "Combo Parte y Comparte Nuggets",
+      "price": 15,
+      "type": "Combo"
+    },
+    {
+      "description": "Descripción del producto 2",
+      "image": "URL de la imagen del producto 2",
+      "name": "Nombre del producto 2",
+      "price": 10,
+      "type": "Tipo del producto 2"
+    }
+]
+  
